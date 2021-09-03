@@ -7,8 +7,7 @@ if($method == 'POST'){
     $url = $_POST['editlinkurl'];
     $uid = $_POST['editlinksno'];
 
-    // check whether the user already exist
-    $sql = "UPDATE `<table name>` SET `<link title>` = '$name', `<link url>` = '$url' WHERE `<table name>`.`<serial label>` = $uid " ;
+    $sql = "UPDATE `links` SET `link_title` = '$name', `link_url` = '$url' WHERE `links`.`sno` = $uid " ;
     $result = mysqli_query($conn, $sql);
         if($result){
             $edit = true;
