@@ -7,9 +7,7 @@ if($method == 'POST'){
     $url = $_POST['addlinkurl'];
     $uid = $_SESSION['sno'];
 
-    // check whether the user already exist
-    // <label> must be replaced with respective labels according to your database      
-    $sql = "INSERT INTO `<table name>` (`<link title>`,`<link url>`, `<link id>`) VALUES ('$name','$url', '$uid')" ;
+    $sql = "INSERT INTO `links` (`link_title`,`link_url`, `link_id`) VALUES ('$name','$url', '$uid')" ;
     $result = mysqli_query($conn, $sql);
         if($result){
             $add = true;
