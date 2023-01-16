@@ -31,6 +31,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     <?php require 'bits/_navbar.php' ?>
 
 <style>
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
 .tooltipbox, .edittooltipbox, .deltooltipbox {
 position: relative;
 display: inline-block;

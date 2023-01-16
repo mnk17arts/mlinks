@@ -7,7 +7,28 @@
     <?php require 'bits/_connectdb.php' ?>
     <?php require 'bits/_navbar.php' ?>
 
-  <h1> LOADING... </h1>
+    <div class="about">
+        <h1> About </h1>
+        <p> This is a simple links management website. </p>
+        <p> This website is made by <a href="https://mnk17arts.github.io">Mnk17arts</a> </p>
+    </div>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .about {
+            margin: 0 auto;
+            width: 50%;
+            height: 90vh;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 
 
     <?php require 'bits/_footer.php' ?>
